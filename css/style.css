@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --text-fs: 1.75rem;
+  --primary-ff: "Manrope", sans-serif;
+  --extra-bold-fw: 800;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: var(--primary-ff);
+}
+
+.box {
+  max-width: 600px;
+  min-height: 400px;
+  background-color: var(--dark-grayish-blue);
+  border-radius: 20px;
+  transition: 200ms ease-in;
+}
+
+.advice-number {
+  color: var(--neon-green);
+  font-size: var(--text-fs);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.advice-text {
+  color: var(--light-cyan);
+  font-size: var(--text-fs);
+  font-weight: var(--extra-bold-fw);
+}
+
+.submit-btn {
+  width: 70px;
+  height: 70px;
+  background-color: var(--neon-green);
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  position: absolute;
+  left: 50%;
+  bottom: -15%;
+  transform: translate(-50%, -50%);
+  transition: 200ms ease-in;
+}
+
+.submit-btn:hover {
+  box-shadow: 0px 0px 20px var(--neon-green);
+}
